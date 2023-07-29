@@ -10,7 +10,7 @@ import LoginIcon from '@mui/icons-material/Login';
 
 export default function Navbar() {
 
-    const [height,setHeight]=useState(window.scrollY);
+    const [height,setHeight]=useState(0);
     useEffect(()=>{
         window.addEventListener("scroll",adjustHeight);
 
@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className={`col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 col-xxl-12 
         d-flex justify-content-center
         navbar-outer
-        ${height>500?"add-bgcolor":""}`}>
+        ${height>300?"add-bgcolor":""}`}>
         <div className={`col-11 col-sm-11 col-md-10 col-xl-10 col-lg-10 col-xxl-10 navbar-main
         `}>
             <div className="logo-leftside ">
