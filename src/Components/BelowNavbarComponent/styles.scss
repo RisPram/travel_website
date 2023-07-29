@@ -1,0 +1,80 @@
+.below-navbar-main {
+
+    background-image: url("../../Assets/backimg.jpeg");
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .choose-location {
+        position: relative;
+        border: 1px solid rgb(50, 50, 50);
+        border-radius: 5px;
+        padding: 10px;
+
+        h2 {
+            text-align: center;
+            padding: 10px;
+            
+        }
+
+        .input-box-container {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+
+            input {
+
+                border: 1px solid rgb(50, 50, 50);
+                border-radius: 5px;
+                outline: none;
+                padding: 10px;
+                color: white;
+                font-weight: bold;
+                background-color: rgba(50, 50, 50, 0.4);
+
+            }
+
+            ::placeholder {
+                color: white;
+                font-weight: 300;
+                opacity: 0.5;
+            }
+
+            .btn {
+                color: white;
+                background-color: black;
+
+                &:hover {
+                    background-color: rgba(255, 250, 255, 0.3);
+                    border: 2px solid white;
+                    color: black;
+                    transition: 0.5s;
+                }
+            }
+
+            @media only screen and (max-width:768px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media only screen and (max-width:768px){
+            border:none;
+        }
+    }
+
+
+    .choose-location::before {
+        position: absolute;
+        height: 100%;
+        content: "";
+        background-color: black;
+        opacity: 0.4;
+    }
+
+}

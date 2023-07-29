@@ -1,0 +1,48 @@
+.popular-destination{
+    // border:2px solid rgb(1, 1, 36);
+    margin:30px 0 10px 0;
+    padding:10px ;
+    
+    h3 {
+        text-align: center;
+        padding: 10px;
+        color:rgb(28, 5, 114);
+        // border:1px solid green;
+       
+    }
+    .popular-destination-intro{
+        text-align: center;
+        font-weight: 12px;
+        font-weight: bold;
+        // border:1px solid red;
+    }
+
+    .popular-places-container{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        grid-gap:15px 20px;
+    .popular-places-card{
+        display:flex;
+        flex-direction: column;
+        padding:10px;
+        border:1px solid rgb(25, 30, 30);
+        border-radius:5px;
+        height:auto;
+        .image-card{
+           height:150px;
+            width:180px;
+            margin:auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .name{text-align: center;padding:5px 0;font-size: 14px; font-weight: 600;
+        }
+        .name-ellipsis{
+            width:90%;overflow: hidden;text-overflow: ellipsis;
+        }
+        .address{text-align: center;padding-bottom:5px ;font-size: 12px;color:#333}
+        .distance{text-align: center;padding-bottom:5px ;}
+    }
+}
+}
